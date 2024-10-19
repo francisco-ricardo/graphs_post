@@ -142,6 +142,7 @@ The block below  represents the graph above using an Adjacency List.
     "2": ["1", "3"],
     "3": ["0", "1", "2"]
 }
+```
 
 ### Time Complexity of Graph Traversals
 

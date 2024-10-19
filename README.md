@@ -42,13 +42,9 @@ Let us consider a simple graph with *n* vertices and *m* edges. If *G* is not a 
 
 ![Equation 3](./images/eq3.png)
 
-    \begin{equation} \label{eq3}
-        m \le n(n - 1) / 2
-    \end{equation}
+Two edges can not have the same start point and end point and there is no loops. So, a maximum degree of an edge in *G* is *n - 1*. So, by the definition **1**:
 
-    Two edges can not have the same start point and end point and there
-    is no loops. So, a maximum degree of an edge in \emph{G} is $n - 1$.
-    So, by the definition \ref{eq1}:
+![Equation 3](./images/eq3.png)
 
     \begin{equation} \label{eq4}
         2m = n(n - 1)

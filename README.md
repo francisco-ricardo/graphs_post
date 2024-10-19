@@ -2,47 +2,55 @@
 
 ## Introduction
 
-Graphs are fundamental data structures that represent relationships between objects, consisting of **vertices** (nodes) and **edges** (connections). The origins of graph theory can be traced back to the "Seven Bridges of Königsberg" problem, solved by Leonhard Euler in 1736, which marked the foundation of graph theory and topology (Diestel, 2005).
+Graphs are fundamental data structures that represent relationships between objects, consisting of **vertices** (nodes) and **edges** (connections). The origins of graph theory can be traced back to the "Seven Bridges of Königsberg" problem, solved by Leonhard Euler in 1736, marking the foundation of graph theory and topology (Diestel, 2005).
 
-Graphs play a vital role in computer science, where they are widely used for modeling relationships in areas such as social networks, computer networks, and biology (Cormen et al., 2009). Several algorithms exist to traverse and analyze graphs, each serving different purposes in problem-solving.
+In computer science, graphs play a vital role in modeling relationships, ranging from social networks to computer networks and biology (Cormen et al., 2009). Numerous algorithms have been developed to traverse and analyze graphs, each tailored to different problem-solving approaches.
 
 ### Definitions
 
-A graph is a way to represent relationships between pairs of objects (Goodrich et al. 2014) or entities. A graph can be defined by a set of vertices and a collection of edges. The edges can contain a weight to represent an arbitrary value, such as cost, or distance, or quantify, for example. Vertices (also called nodes) represent entities in graphs, whereas edges represent relationships between those entities (Xia et al., 2021). In an abstract point of view, a graph *G* is a set of vertex *V* and a collection *E* of pairs of vertex (the edges).
+A graph is a structure used to represent relationships between pairs of objects (Goodrich et al. 2014) or entities. It consists of a set of vertices and a collection of edges. Each edge can optionally carry a weight to represent an arbitrary value, such as cost, distance, or quantity. Vertices (also called nodes) represent entities, while edges represent relationships between them (Xia et al., 2021).
 
-The graph may be directed, when the edges are ordered pairs
-*(u, v)* of vertices, with *u* preceding *v*. This type of graph is also called **digraph**. The graph is undirected, when the edges are unordered pairs of vertices, also represented as *(u, v)*.
-In this type of graph, the edge *(u, v)* is identical to the edge
-*(v, u)*.
+Formally, a graph *G* is defined as a set of vertices *V* and a collection *E* of pairs of vertices (the edges).
 
-The two vertices connected by an edge are called endpoints.
-Adjacent vertices are two vertices that are joined by an edge.
-Adjacent edges are two edges that have an endpoint in common.
-A vertex joined to itself by an edge is called loop.
-An edge is incident to a vertex if the vertex is an endpoint of the edge.
+A graph may be:
 
-Usually, the edges can be represented by a triplet *(u, v, w)*, with *u* and *v* as the endpoints, and *w* as the weight.
-The degree of a vertex *v* (*deg{v}*) corresponds to the number of the incident edges to the vertex *v*.
-The input degree (*indeg(v)*) of a vertex *v* consists of the number of incident edges in *v*.
-The output degree (*outdeg(v)*) of a vertex *v* is the number of incident edges from *v*.
+- Directed: Edges are ordered pairs *(u, v)*, where *u* points to *v* (also called a digraph).
 
-If *G* is a graph with *m* edges, then:
+- Undirected: Edges are unordered pairs, where *(u, v)* is the same as *(v, u)*.
+
+Some definitions about edges and vertices:
+
+- Adjacent vertices: Two vertices joined by an edge.
+
+- Adjacent edges: Two edges sharing an endpoint.
+
+- Loop: An edge that joins a vertex to itself.
+
+- Two vertices connected by an edge are called endpoints.
+
+- Edges can be represented by a triplet *(u, v, w)*, with *u* and *v* being the endpoints, and *w* the weight.
+
+- The degree of a vertex *v* (*deg(v)*) refers to the number of edges incident to *v*.
+
+- In a directed graph, the in-degree (*indeg(v)*) is the number of edges pointing to *v*, while the out-degree (*outdeg(v)*) is the number of edges leaving *v*.
+
+If *G* is an undirected graph with *m* edges, we have:
 
 ![Equation 1](./images/eq1.png)
 
-The definition **1** is justified by the fact that the edge *(u, v)* is counted twice, one for the endpoint *(u)* and another for the endpoint *(v)*.
+In this case, each edge *(u, v)* is counted twice, one for the endpoint *(u)* and another for the endpoint *(v)*.
 
-If *G* is a directed graph with *m* edges, then:
+For a directed graph with *m* edges, then:
 
-![Equation 2](./images/eq2.png)
+![Equation 2](./images/eq2.png):
 
-In a directed graph one edge *(u, v)* counts as one unit for the output degree of the source *u* and one unit for the input degree of the target *v*.
+Here, each edge counts as one unit for the out-degree of the source vertex and one unit for the in-degree of the target vertex.
 
-Let us consider a simple graph with *n* vertices and *m* edges. If *G* is not a directed graph, then:
+Consider a simple graph with *n* vertices and *m* edges. If the graph is undirected, then:
 
 ![Equation 3](./images/eq3.png)
 
-Two edges can not have the same start point and end point and there is no loops. So, a maximum degree of an edge in *G* is *n - 1*. So, by the definition **1**:
+The maximum degree of a vertex in this undirected graph is *n - 1*. Thus:
 
 ![Equation 4](./images/eq4.png)
 
@@ -62,22 +70,22 @@ Based on the definition **2**, the maximum degree of a vertex in *G* of a direct
 
 Graphs can be implemented in different ways, each with its trade-offs in terms of space and time complexity.
 
-The following sections will cover three implementation strategies for graphs: **Edge List**, **Adjacenty Matrix** and **Adjacency List**.
+The following sections cover three common implementation strategies: **Edge List**, **Adjacenty Matrix** and **Adjacency List**.
 
-For a deeper dive into these implementation methods, you can check my repository [graphs-ds](https://github.com/francisco-ricardo/graphs_ds), which is still in progress.
+For a more detailed exploration, check out my repository [graphs-ds](https://github.com/francisco-ricardo/graphs_ds), which is currently under development.
 
 ### Edge List
 
-An **edge list** is a basic representation where all edges are listed as pairs of vertices. For example, an undirected graph with edges (A, B) and (B, C) would be represented as `[(A, B), (B, C)]`.
+An **edge list** is a basic representation where all edges are listed as pairs of vertices. For example, an undirected graph with edges *(A, B)* and *(B, C)* would be represented as `[(A, B), (B, C)]`.
 
 - **Space Complexity**: O(E), where E is the number of edges.
 - **Edge Lookup**: O(E), since each edge must be checked.
 
-Let us consider the graph below.
+Consider the graph below.
 
 ![Figure 1](./images/undirected-graph.png)
 
-The table below is a representation of the graph above using Edge List.
+The following table represents the graph above using an Edge List.
 
 | Index | Vertex 1 | Vertex 2 |
 |-------|----------|----------|
@@ -100,11 +108,11 @@ An **adjacency matrix** is a 2D array where the cell at row i and column j indic
 
 - **Edge Lookup**: O(1), as each connection can be checked directly.
 
-Let us consider the graph below.
+Consider the graph below.
 
 ![Figure 1](./images/undirected-graph.png)
 
-The matrix below is a representation of the graph above using Adjacency Matrix.
+The matrix below  represents the graph above using an Adjacency Matrix.
 
 |    | j1 | j2 | j3 | j4 |
 |----|----|----|----|----|
@@ -115,17 +123,17 @@ The matrix below is a representation of the graph above using Adjacency Matrix.
 
 ### Adjacency List
 
-An **adjacency list** is a more space-efficient structure where each vertex maintains a list of its adjacent vertices. For instance, a graph where vertex A is connected to B and C would have a list like `A: [B, C]` (Cormen et al., 2009).
+An **adjacency list** is a space-efficient structure where each vertex maintains a list of its adjacent vertices. For instance, a graph where vertex *A* is connected to *B* and *C* would have a list like `A: [B, C]` (Cormen et al., 2009).
 
 - **Space Complexity**: O(V + E), as space grows with both the number of vertices and edges.
 
 - **Edge Lookup**: O(V) in the worst case, but generally faster for sparse graphs.
 
-Let us consider the graph below.
+Consider the graph below.
 
 ![Figure 1](./images/undirected-graph.png)
 
-The *HashMap* below is a representation of the graph above using Adjacency List.
+The block below  represents the graph above using an Adjacency List.
 
 ```json
 {
@@ -134,9 +142,6 @@ The *HashMap* below is a representation of the graph above using Adjacency List.
     "2": ["1", "3"],
     "3": ["0", "1", "2"]
 }
-
-
-
 
 ### Time Complexity of Graph Traversals
 

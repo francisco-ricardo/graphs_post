@@ -36,17 +36,12 @@ If *G* is a directed graph with *m* edges, then:
 
 ![Equation 2](./images/eq2.png)
 
+In a directed graph one edge *(u, v)* counts as one unit for the output degree of the source *u* and one unit for the input degree of the target *v*.
 
-    \begin{equation} \label{eq2}
-        \sum_{v \in G} indeg(v) = \sum_{v \in G} outdeg(v) = m
-    \end{equation}
+Let us consider a simple graph with *n* vertices and *m* edges. If *G* is not a directed graph, then:
 
-    In a directed graph one edge \emph{(u, v)} counts as one unit
-    for the output degree of the source \emph{u} and one unit for
-    the input degree of the target \emph{v}.
+![Equation 3](./images/eq3.png)
 
-    Let us consider a simple graph with \emph{n} vertices and \emph{m}
-    edges. If \emph{G} is not a directed graph, then:
     \begin{equation} \label{eq3}
         m \le n(n - 1) / 2
     \end{equation}

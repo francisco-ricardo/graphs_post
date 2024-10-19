@@ -26,7 +26,7 @@ The degree of a vertex *v* (*deg{v}*) corresponds to the number of the incident 
 The input degree (*indeg(v)*) of a vertex *v* consists of the number of incident edges in *v*.
 The output degree (*outdeg(v)*) of a vertex *v* is the number of incident edges from *v*.
 
-If \emph{G} is a graph with \emph{m} edges, then:
+If *G* is a graph with *m* edges, then:
 
 ![Equation 1](./images/eq1.png)
 
@@ -129,20 +129,3 @@ Graphs are an essential tool in modeling relationships and networks in various f
 - Even, S. (2011). *Graph Algorithms*. Cambridge University Press.
 - Goodrich, M. T., Tamassia, R., & Goldwasser, M. H. (2014). *Data structures and algorithms in Java*. John Wiley & Sons.
 - Xia, F., Sun, K., Yu, S., Aziz, A., Wan., L., Pan, S., and Liu, H. (2021). *Graph learning: A survey*. IEEE Transactions on Artificial Intelligence, vol. 2, no. 2, pp. 109–127.
-
-
-
-
-
-
-# DESCRIPTION
-
-It is a latex document about Graphs Theory.
-
-## HOW TO COMPILE
-
-```bash
-cd latex
-make doc=article build
-
-```

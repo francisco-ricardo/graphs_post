@@ -104,14 +104,13 @@ Let us consider the graph below.
 
 ![Figure 1](./images/undirected-graph.png)
 
-The table below is a representation of the graph above using Adjacency Matrix.
+The matrix below is a representation of the graph above using Adjacency Matrix.
 
-|    |  0 |  1 |  2 |  3 |
-|----|----|----|----|----|
-|  0 |  0 | 18 |  0 | 11 |
-|  1 | 18 |  0 |  9 | 14 |
-|  2 |  0 |  9 |  0 | 25 |
-|  3 | 11 | 14 | 25 |  0 |
+|----|----|----|----|
+|  0 | 18 |  0 | 11 |
+| 18 |  0 |  9 | 14 |
+|  0 |  9 |  0 | 25 |
+| 11 | 14 | 25 |  0 |
 
 ### Adjacency List
 

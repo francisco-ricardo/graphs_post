@@ -73,6 +73,25 @@ An **edge list** is a basic representation where all edges are listed as pairs o
 - **Space Complexity**: O(E), where E is the number of edges.
 - **Edge Lookup**: O(E), since each edge must be checked.
 
+Let us consider the graph below.
+
+![Figure 1](./images/undirected-graph.png)
+
+The table below is a representation of the graph above using Edge List.
+
+| Index | Vertex 1 | Vertex 2 |
+|-------|----------|----------|
+| 0     | 0        | 1        |
+| 1     | 0        | 3        |
+| 2     | 1        | 0        |
+| 3     | 1        | 2        |
+| 4     | 1        | 3        |
+| 5     | 2        | 1        |
+| 6     | 2        | 3        |
+| 7     | 3        | 0        |
+| 8     | 3        | 1        |
+| 9     | 3        | 2        |
+
 ### Adjacency Matrix
 
 An **adjacency matrix** is a 2D array where the cell at row i and column j indicates whether there is an edge between vertex i and vertex j (Sedgewick & Wayne, 2011).

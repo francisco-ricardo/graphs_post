@@ -8,6 +8,8 @@ Graphs play a vital role in computer science, where they are widely used for mod
 
 ### Brackground
 
+![Equation 1](./images/eq1.png)
+
 A graph is a way to represent relationships between pairs of objects \cite{goodrich:2014} or entities.
     A graph can be defined by a set of vertices and a collection
     of edges. The edges can contain a weight to represent an

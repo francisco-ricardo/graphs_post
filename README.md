@@ -62,6 +62,10 @@ Based on the definition **2**, the maximum degree of a vertex in *G* of a direct
 
 Graphs can be implemented in different ways, each with its trade-offs in terms of space and time complexity.
 
+The following sections will cover three implementation strategies for graphs: **Edge List**, **Adjacenty Matrix** and **Adjacency List**.
+
+For a deeper dive into these implementation methods, you can check my repository [graphs-ds](https://github.com/francisco-ricardo/graphs_ds), which is still in progress.
+
 ### Edge List
 
 An **edge list** is a basic representation where all edges are listed as pairs of vertices. For example, an undirected graph with edges (A, B) and (B, C) would be represented as `[(A, B), (B, C)]`.
@@ -90,8 +94,6 @@ An **adjacency list** is a more space-efficient structure where each vertex main
 - **Breadth-First Search (BFS)** and **Depth-First Search (DFS)** have a time complexity of O(V + E) (Cormen et al., 2009).
 
 - **Dijkstra's Algorithm**: O((V + E) log V), where a priority queue is used to efficiently select the next node (Even, 2011).
-
-For a deeper dive into these implementation methods, you can check my repository [graphs-ds](https://github.com/francisco-ricardo/graphs_ds), which is still in progress.
 
 ## Applications
 

@@ -26,17 +26,17 @@ The degree of a vertex *v* (*deg{v}*) corresponds to the number of the incident 
 The input degree (*indeg(v)*) of a vertex *v* consists of the number of incident edges in *v*.
 The output degree (*outdeg(v)*) of a vertex *v* is the number of incident edges from *v*.
 
-    If \emph{G} is a graph with \emph{m} edges, then:
-    \begin{equation} \label{eq1}
-        \sum_{v \in G} deg(v) = 2m
-    \end{equation}
+If \emph{G} is a graph with \emph{m} edges, then:
+
 ![Equation 1](./images/eq1.png)
 
-    The definition \ref{eq1} is justified by the fact that the dege
-    \emph{(u, v)} is counted twice, one for the endpoint \emph{(u)} and
-    another for the endpoint \emph{(v)}.
+The definition **1** is justified by the fact that the edge *(u, v)* is counted twice, one for the endpoint *(u)* and another for the endpoint *(v)*.
 
-    If \emph{G} is a directed graph with \emph{m} edges, then:
+If *G* is a directed graph with *m* edges, then:
+
+![Equation 2](./images/eq2.png)
+
+
     \begin{equation} \label{eq2}
         \sum_{v \in G} indeg(v) = \sum_{v \in G} outdeg(v) = m
     \end{equation}

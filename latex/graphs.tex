@@ -51,16 +51,6 @@
 
     \section{Overview}
 
-    TODO:
-    história
-    aplicações práticas (enfatizar neo4j)
-        networks (ideal ds for modeling networks), social networks
-        The applications of graphs include finding the shortest path,
-        finding the best starting point, breadth-first and depth-first
-        traversal, searching, inserting, deleting from a tree or
-        linked list, graph classification, finding missing relationships
-        through link prediction, and node classification.
-
     A graph is a way to represent relationships between pairs
     of objects \cite{goodrich:2014} or entities.
     A graph can be defined by a set of vertices and a collection
@@ -82,7 +72,6 @@
     graph, the edge \emph{(u, v)} is identical to the edge
     \emph{(v, u)}.
 
-
     The two vertices connected by an edge are called endpoints.
     Adjacent vertices are two vertices that are joined by an edge.
     Adjacent edges are two edges that have an endpoint in common.
@@ -103,8 +92,6 @@
     number of incident edges from \emph{v}.
 
     If \emph{G} is a graph with \emph{m} edges, then:
-
-
 
     \begin{equation} \label{eq1}
         \sum_{v \in G} deg(v) = 2m
@@ -143,8 +130,6 @@
         m \le n(n-1)
     \end{equation}
 
-
-
     A path from vertex \emph{v0} to vertex \emph{vn} is an alternating sequence of
     vertices and edges $ P =< v_0, e_1, v_1, e_2, ..., v_{n-1}, e_n, v_n > $
     such that the endpoints of $ e_i $ are $ v_{i-1} $, $ v_i $ and there are no
@@ -152,7 +137,6 @@
     A cycle is a path such that start vertex and end vertex are the same.
 
     \section{Implementation Strategies}
-
 
     The following sections will cover three implementation strategies for graphs.
     The section \ref{edgelist} presents \emph{Edge List}.
@@ -227,11 +211,7 @@
     \end{table}
 
 
-
-
-
     \subsection{Adjacency Matrix} \label{adjacency_matrix}
-
 
     \begin{table}[H]
         \centering
@@ -247,7 +227,6 @@
             \hline
         \end{tabular}
     \end{table}
-
 
 
     \subsection{Adjacency List} \label{adjacency_list}

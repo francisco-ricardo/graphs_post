@@ -11,29 +11,20 @@ Graphs play a vital role in computer science, where they are widely used for mod
 A graph is a way to represent relationships between pairs of objects (Goodrich et al. 2014) or entities. A graph can be defined by a set of vertices and a collection of edges. The edges can contain a weight to represent an arbitrary value, such as cost, or distance, or quantify, for example. Vertices (also called nodes) represent entities in graphs, whereas edges represent relationships between those entities (Xia et al., 2021). In an abstract point of view, a graph *G* is a set of vertex *V* and a collection *E* of pairs of vertex (the edges).
 
 The graph may be directed, when the edges are ordered pairs
-*(u, v)* of vertices, with *u* preceding *v*. This type of graph is also called *digraph*. The graph is undirected, when the edges are unordered pairs of vertices, also represented as *(u, v)*.
+*(u, v)* of vertices, with *u* preceding *v*. This type of graph is also called **digraph**. The graph is undirected, when the edges are unordered pairs of vertices, also represented as *(u, v)*.
 In this type of graph, the edge *(u, v)* is identical to the edge
 *(v, u)*.
 
+The two vertices connected by an edge are called endpoints.
+Adjacent vertices are two vertices that are joined by an edge.
+Adjacent edges are two edges that have an endpoint in common.
+A vertex joined to itself by an edge is called loop.
+An edge is incident to a vertex if the vertex is an endpoint of the edge.
 
-    The two vertices connected by an edge are called endpoints.
-    Adjacent vertices are two vertices that are joined by an edge.
-    Adjacent edges are two edges that have an endpoint in common.
-    A vertex joined to itself by an edge is called loop.
-
-    An edge is incident to a vertex if the vertex is an endpoint of
-    the edge.
-
-    Usually, the edges can be represented by a triplet
-    \emph{(u, v, w)}, with \emph{u} and \emph{v} as
-    the endpoints, and \emph{w} as the weight.
-
-    The degree of a vertex \emph{v} (\emph{deg{v}}) corresponds to
-    the number of the incident edges to the vertex \emph{v}.
-    The input degree (\emph{indeg(v)}) of a vertex \emph{v} consists
-    of the number of incident edges in \emph{v}.
-    The output degree (\emph{outdeg(v)}) of a vertex \emph{v} is the
-    number of incident edges from \emph{v}.
+Usually, the edges can be represented by a triplet *(u, v, w)*, with *u* and *v* as the endpoints, and *w* as the weight.
+The degree of a vertex *v* (*deg{v}*) corresponds to the number of the incident edges to the vertex *v*.
+The input degree (*indeg(v)*) of a vertex *v* consists of the number of incident edges in *v*.
+The output degree (*outdeg(v)*) of a vertex *v* is the number of incident edges from *v*.
 
     If \emph{G} is a graph with \emph{m} edges, then:
     \begin{equation} \label{eq1}

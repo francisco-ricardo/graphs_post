@@ -127,12 +127,14 @@ Let us consider the graph below.
 
 The *HashMap* below is a representation of the graph above using Adjacency List.
 
-`{
+```json
+{
     "0": ["1", "3"],
     "1": ["0", "2", "3"],
     "2": ["1", "3"],
     "3": ["0", "1", "2"]
-}`
+}
+
 
 
 

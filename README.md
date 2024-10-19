@@ -100,6 +100,19 @@ An **adjacency matrix** is a 2D array where the cell at row i and column j indic
 
 - **Edge Lookup**: O(1), as each connection can be checked directly.
 
+Let us consider the graph below.
+
+![Figure 1](./images/undirected-graph.png)
+
+The table below is a representation of the graph above using Adjacency Matrix.
+
+|    |  0 |  1 |  2 |  3 |
+|----|----|----|----|----|
+|  0 |  0 | 18 |  0 | 11 |
+|  1 | 18 |  0 |  9 | 14 |
+|  2 |  0 |  9 |  0 | 25 |
+|  3 | 11 | 14 | 25 |  0 |
+
 ### Adjacency List
 
 An **adjacency list** is a more space-efficient structure where each vertex maintains a list of its adjacent vertices. For instance, a graph where vertex A is connected to B and C would have a list like `A: [B, C]` (Cormen et al., 2009).

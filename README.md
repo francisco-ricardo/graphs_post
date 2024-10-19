@@ -106,6 +106,7 @@ Let us consider the graph below.
 
 The matrix below is a representation of the graph above using Adjacency Matrix.
 
+|    |    |    |    |
 |----|----|----|----|
 |  0 | 18 |  0 | 11 |
 | 18 |  0 |  9 | 14 |

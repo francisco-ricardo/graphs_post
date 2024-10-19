@@ -44,14 +44,16 @@ Let us consider a simple graph with *n* vertices and *m* edges. If *G* is not a 
 
 Two edges can not have the same start point and end point and there is no loops. So, a maximum degree of an edge in *G* is *n - 1*. So, by the definition **1**:
 
-![Equation 3](./images/eq3.png)
+![Equation 4](./images/eq4.png)
 
     \begin{equation} \label{eq4}
         2m = n(n - 1)
     \end{equation}
 
-    Based on the definition \ref{eq2}, the maximum degree of a vertex in \emph{G}
-    of a directed graph is:
+Based on the definition **2**, the maximum degree of a vertex in *G* of a directed graph is:
+
+![Equation 5](./images/eq5.png)
+
     \begin{equation}
         m \le n(n-1)
     \end{equation}

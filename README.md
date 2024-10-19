@@ -121,6 +121,21 @@ An **adjacency list** is a more space-efficient structure where each vertex main
 
 - **Edge Lookup**: O(V) in the worst case, but generally faster for sparse graphs.
 
+Let us consider the graph below.
+
+![Figure 1](./images/undirected-graph.png)
+
+The *HashMap* below is a representation of the graph above using Adjacency List.
+
+`{
+    "0": ["1", "3"],
+    "1": ["0", "2", "3"],
+    "2": ["1", "3"],
+    "3": ["0", "1", "2"]
+}`
+
+
+
 ### Time Complexity of Graph Traversals
 
 - **Breadth-First Search (BFS)** and **Depth-First Search (DFS)** have a time complexity of O(V + E) (Cormen et al., 2009).

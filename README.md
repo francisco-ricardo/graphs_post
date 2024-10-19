@@ -49,11 +49,6 @@ A graph is a way to represent relationships between pairs of objects \cite{goodr
     number of incident edges from \emph{v}.
 
     If \emph{G} is a graph with \emph{m} edges, then:
-
-\[
-    \sum_{v \in G} \deg(v) = 2m
-\]
-
     \begin{equation} \label{eq1}
         \sum_{v \in G} deg(v) = 2m
     \end{equation}

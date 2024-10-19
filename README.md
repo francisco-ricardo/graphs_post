@@ -6,29 +6,14 @@ Graphs are fundamental data structures that represent relationships between obje
 
 Graphs play a vital role in computer science, where they are widely used for modeling relationships in areas such as social networks, computer networks, and biology (Cormen et al., 2009). Several algorithms exist to traverse and analyze graphs, each serving different purposes in problem-solving.
 
-### Brackground
+### Definitions
 
-![Equation 1](./images/eq1.png)
+A graph is a way to represent relationships between pairs of objects (Goodrich et al. 2014) or entities. A graph can be defined by a set of vertices and a collection of edges. The edges can contain a weight to represent an arbitrary value, such as cost, or distance, or quantify, for example. Vertices (also called nodes) represent entities in graphs, whereas edges represent relationships between those entities (Xia et al., 2021). In an abstract point of view, a graph *G* is a set of vertex *V* and a collection *E* of pairs of vertex (the edges).
 
-A graph is a way to represent relationships between pairs of objects \cite{goodrich:2014} or entities.
-    A graph can be defined by a set of vertices and a collection
-    of edges. The edges can contain a weight to represent an
-    arbitrary value, such as cost, or distance, or quantify,
-    for example.
-    Vertices (also called nodes) represent entities in graphs,
-    whereas edges represent
-    relationships between those entities \cite{xia:2021}.
-    In an abstract point of view, a graph \emph{G} is a set of vertex
-    \emph{V} and a collection \emph{E} of pairs of vertex (the edges).
-
-    The graph may be directed, when the edges are ordered pairs
-    \emph{(u, v)} of vertices, with \emph{u} preceding \emph{v}.
-    This type of graph is also called digraph.
-
-    The graph is undirected, when the edges are unordered pairs of
-    vertices, also represented as \emph{(u, v)}. In this type of
-    graph, the edge \emph{(u, v)} is identical to the edge
-    \emph{(v, u)}.
+The graph may be directed, when the edges are ordered pairs
+*(u, v)* of vertices, with *u* preceding *v*. This type of graph is also called *digraph*. The graph is undirected, when the edges are unordered pairs of vertices, also represented as *(u, v)*.
+In this type of graph, the edge *(u, v)* is identical to the edge
+*(v, u)*.
 
 
     The two vertices connected by an edge are called endpoints.
@@ -54,6 +39,7 @@ A graph is a way to represent relationships between pairs of objects \cite{goodr
     \begin{equation} \label{eq1}
         \sum_{v \in G} deg(v) = 2m
     \end{equation}
+![Equation 1](./images/eq1.png)
 
     The definition \ref{eq1} is justified by the fact that the dege
     \emph{(u, v)} is counted twice, one for the endpoint \emph{(u)} and
@@ -166,6 +152,10 @@ Graphs are an essential tool in modeling relationships and networks in various f
 - Diestel, R. (2005). *Graph Theory*. Springer.
 - Sedgewick, R., & Wayne, K. (2011). *Algorithms*. Addison-Wesley.
 - Even, S. (2011). *Graph Algorithms*. Cambridge University Press.
+- Goodrich, M. T., Tamassia, R., & Goldwasser, M. H. (2014). *Data structures and algorithms in Java*. John Wiley & Sons.
+- Xia, F., Sun, K., Yu, S., Aziz, A., Wan., L., Pan, S., and Liu, H. (2021). *Graph learning: A survey*. IEEE Transactions on Artificial Intelligence, vol. 2, no. 2, pp. 109–127.
+
+
 
 
 

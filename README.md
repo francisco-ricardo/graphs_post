@@ -106,12 +106,12 @@ Let us consider the graph below.
 
 The matrix below is a representation of the graph above using Adjacency Matrix.
 
-|    |    |    |    |
-|----|----|----|----|
-|  0 | 18 |  0 | 11 |
-| 18 |  0 |  9 | 14 |
-|  0 |  9 |  0 | 25 |
-| 11 | 14 | 25 |  0 |
+|    | j1 | j2 | j3 | j4 |
+|----|----|----|----|----|
+| i1 |  0 | 18 |  0 | 11 |
+| i2 | 18 |  0 |  9 | 14 |
+| i3 |  0 |  9 |  0 | 25 |
+| i4 | 11 | 14 | 25 |  0 |
 
 ### Adjacency List
 

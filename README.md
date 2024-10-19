@@ -1,6 +1,6 @@
-# Graphs: Overview, Implementation Strategies, and Applications
+# Graphs: Overview
 
-## Overview
+## Introduction
 
 Graphs are fundamental data structures that represent relationships between objects, consisting of **vertices** (nodes) and **edges** (connections). The origins of graph theory can be traced back to the "Seven Bridges of Königsberg" problem, solved by Leonhard Euler in 1736, which marked the foundation of graph theory and topology (Diestel, 2005).
 
@@ -46,18 +46,9 @@ Two edges can not have the same start point and end point and there is no loops.
 
 ![Equation 4](./images/eq4.png)
 
-    \begin{equation} \label{eq4}
-        2m = n(n - 1)
-    \end{equation}
-
 Based on the definition **2**, the maximum degree of a vertex in *G* of a directed graph is:
 
 ![Equation 5](./images/eq5.png)
-
-    \begin{equation}
-        m \le n(n-1)
-    \end{equation}
-
 
 ### Graph Algorithms
 
@@ -100,7 +91,7 @@ An **adjacency list** is a more space-efficient structure where each vertex main
 
 - **Dijkstra's Algorithm**: O((V + E) log V), where a priority queue is used to efficiently select the next node (Even, 2011).
 
-For a deeper dive into these implementation methods, you can check my repository [graphs-ds](https://github.com/your-repo-url), which is still in progress.
+For a deeper dive into these implementation methods, you can check my repository [graphs-ds](https://github.com/francisco-ricardo/graphs_ds), which is still in progress.
 
 ## Applications
 
